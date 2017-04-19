@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A90205471EA6BE3E0001CDCD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A90205461EA6BE3E0001CDCD /* main.cpp */; };
+		A938F5911EA7CA800061C73A /* libsystemc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A938F5901EA7CA800061C73A /* libsystemc.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		A90205431EA6BE3E0001CDCD /* SW_PROJECT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SW_PROJECT; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90205461EA6BE3E0001CDCD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A938F5901EA7CA800061C73A /* libsystemc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsystemc.dylib; path = "../../../../usr/local/systemc231a/lib-macosx64/libsystemc.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A938F5911EA7CA800061C73A /* libsystemc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				A90205451EA6BE3E0001CDCD /* SW_PROJECT */,
 				A90205441EA6BE3E0001CDCD /* Products */,
+				A938F58F1EA7CA800061C73A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				A90205461EA6BE3E0001CDCD /* main.cpp */,
 			);
 			path = SW_PROJECT;
+			sourceTree = "<group>";
+		};
+		A938F58F1EA7CA800061C73A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A938F5901EA7CA800061C73A /* libsystemc.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +230,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3X76KZ62FY;
+				HEADER_SEARCH_PATHS = /usr/local/systemc231a/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/systemc231a/lib-macosx64",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,6 +243,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3X76KZ62FY;
+				HEADER_SEARCH_PATHS = /usr/local/systemc231a/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/systemc231a/lib-macosx64",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -249,6 +271,7 @@
 				A902054C1EA6BE3E0001CDCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

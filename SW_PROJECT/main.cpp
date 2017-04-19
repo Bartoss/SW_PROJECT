@@ -7,11 +7,13 @@
 //
 
 #include <iostream>
+#include <systemc>
 using namespace std;
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    //some changes
+using namespace sc_core;
+
+int sc_main(int argc, char *argv[]) {
     cout << "Hello, World!\n";
-    
+    sc_start();
     return 0;
 }
+
