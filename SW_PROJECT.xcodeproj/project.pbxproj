@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A90205471EA6BE3E0001CDCD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A90205461EA6BE3E0001CDCD /* main.cpp */; };
 		A938F5911EA7CA800061C73A /* libsystemc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A938F5901EA7CA800061C73A /* libsystemc.dylib */; };
+		A938F5941EA7CB910061C73A /* moduleOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A938F5921EA7CB910061C73A /* moduleOne.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		A90205431EA6BE3E0001CDCD /* SW_PROJECT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SW_PROJECT; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90205461EA6BE3E0001CDCD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A938F5901EA7CA800061C73A /* libsystemc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsystemc.dylib; path = "../../../../usr/local/systemc231a/lib-macosx64/libsystemc.dylib"; sourceTree = "<group>"; };
+		A938F5921EA7CB910061C73A /* moduleOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moduleOne.cpp; sourceTree = "<group>"; };
+		A938F5931EA7CB910061C73A /* moduleOne.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = moduleOne.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				A90205461EA6BE3E0001CDCD /* main.cpp */,
+				A938F5921EA7CB910061C73A /* moduleOne.cpp */,
+				A938F5931EA7CB910061C73A /* moduleOne.hpp */,
 			);
 			path = SW_PROJECT;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A938F5941EA7CB910061C73A /* moduleOne.cpp in Sources */,
 				A90205471EA6BE3E0001CDCD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
