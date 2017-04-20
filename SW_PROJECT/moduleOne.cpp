@@ -22,23 +22,40 @@ SC_MODULE(wartosc){
     synchro pobranoJeden;
     synchro koniec1;
     
-    void pierwszy_prog(){
-        cout << "30 stopni" << endl;
+//    void pierwszy_prog(){
+//        cout << "30 stopni" << endl;
+//        pobranoJeden.wartosc.write(wejscie_a.read());
+//        pobranoJeden.zdarzenie.notify(0,SC_NS);
+//        cout << "Minuty = " << wejscie_a.read() << endl;
+//    }
+    
+    void wybor_programu(){
+        cout << "Projekt" << endl;
         pobranoJeden.wartosc.write(wejscie_a.read());
         pobranoJeden.zdarzenie.notify(0,SC_NS);
-        cout << "Minuty = " << wejscie_a.read() << endl;
+        cout << "Wybrano program: " << wejscie_a.read() << endl;
     }
     
-    void task_1(){
+//    void task_1(){
+//        wait(pobranoJeden.zdarzenie);
+//        float temp = pobranoJeden.wartosc.read();
+//        koniec1.wartosc.write(temp);
+//        koniec1.zdarzenie.notify(0,SC_NS);
+//        cout << "TASK 1: Program 30 stopni " <<  temp << " minuty" << endl;
+//    }
+    
+    void prog1(){
         wait(pobranoJeden.zdarzenie);
         float temp = pobranoJeden.wartosc.read();
-        koniec1.wartosc.write(temp);
-        koniec1.zdarzenie.notify(0,SC_NS);
-        cout << "TASK 1: Program 30 stopni " <<  temp << " minuty" << endl;
+        if(temp == 1){
+            koniec1.wartosc.write(temp);
+            koniec1.zdarzenie.notify(0,SC_NS);
+            cout << "PROGRAM 1 Wykonany! " << endl;
+        }
     }
     
     SC_CTOR(wartosc){
-        SC_THREAD(pierwszy_prog);
-        SC_THREAD(task_1);
+        SC_THREAD(wybor_programu);
+        SC_THREAD(prog1);
     }
 };

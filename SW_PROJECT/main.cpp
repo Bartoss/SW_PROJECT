@@ -17,13 +17,19 @@ int sc_main(int argc, char *argv[]) {
     
     sc_signal<float> we_a;
     sc_signal<float> out;
+    float wybor;
     
     //dane wejsciowe
-    we_a= 32;
+    //we_a= 1;
+    cout << "Podaj numer programu: ";
+    cin >> wybor;
     
     wartosc wart("");
     
-    wart.wejscie_a(we_a);
+    if(wybor == 1){
+        we_a = wybor;
+        wart.wejscie_a(we_a);
+    }
     
     wart.Wyjscie(out);
     
