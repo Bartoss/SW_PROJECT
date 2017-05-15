@@ -54,8 +54,20 @@ SC_MODULE(wartosc){
         }
     }
     
+    void prog2(){
+        wait(pobranoJeden.zdarzenie);
+        float temp = pobranoJeden.wartosc.read();
+        if(temp == 2){
+            koniec1.wartosc.write(temp);
+            koniec1.zdarzenie.notify(0,SC_NS);
+            cout << "PROGRAM 2 Wykonany! " << endl;
+        }
+    }
+    
+    
     SC_CTOR(wartosc){
         SC_THREAD(wybor_programu);
         SC_THREAD(prog1);
+        SC_THREAD(prog2);
     }
 };
