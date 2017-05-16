@@ -80,11 +80,16 @@ void Display::refresh()
 void Display::set_functions_names()
 {
 	functions_names[Function::THIRTY]  = "30 Stopni";
+    functions_names[Function::THIRTYFIVE]  = "35 Stopni";
 	functions_names[Function::FOURTY]  = "40 Stopni";
+    functions_names[Function::FOURTYFIVE]  = "45 Stopni";
 	functions_names[Function::FIFTY]   = "50 Stopni";
+    functions_names[Function::FIFTYFIVE]  = "55 Stopni";
 	functions_names[Function::SIXTY]   = "60 Stopni";
-	functions_names[Function::SEVENTY] = "70 Stopni";
+	
 }
+
+
 
 void Display::init_colors()
 {

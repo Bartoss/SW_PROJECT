@@ -45,10 +45,10 @@
 
 void sub_processor::main()
 {
-	const int length = 5;
+	const int length = 7;
 	simple_bus_status status;
 
-	int data[5];
+	int data[7];
 	while(true) 
 	{
 		wait();
@@ -58,8 +58,10 @@ void sub_processor::main()
 			data[2] = 0;
 			data[3] = 0;
 			data[4] = 0;
+            data[5] = 0;
+            data[6] = 0;
 		}
 		wait();wait();wait();wait();wait();wait();wait();wait();wait();
-		cout << data[0] << "-" << data[1] << "-" << data[2] << "-" << data[3] << "-" << data[4]  << endl;
+		cout << data[0] << "-" << data[1] << "-" << data[2] << "-" << data[3] << "-" << data[4] << "-" << data[5] << "-" << data[6]  << endl;
 	}
 }

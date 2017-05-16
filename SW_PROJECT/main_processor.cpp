@@ -43,12 +43,21 @@
 #include "main_processor.h"
 #include "ncurses.h"
 #include "function.h"
+#include "display.h"
 #define KEY_ESC 27
 
 void main_processor::main()
 {
 	char key;
 	int function_id, address, value;
+    char str1[10] = "30 stopni";
+    char str2[10] = "35 stopni";
+    char str3[10] = "40 stopni";
+    char str4[10] = "45 stopni";
+    char str5[10] = "50 stopni";
+    char str6[10] = "55 stopni";
+    char str7[10] = "60 stopni";
+    char str8[10] = "Wylaczono";
 	simple_bus_status status;
     
 
@@ -70,52 +79,55 @@ void main_processor::main()
 
 			case 'w':
 			case 's':
-				function_id = FUNCTION_FOURTY_ID;
+				function_id = FUNCTION_THIRTYFIVE_ID;
 				break;
 
 			case 'e':
 			case 'd':
-				function_id = FUNCTION_FIFTY_ID;
+				function_id = FUNCTION_FOURTY_ID;
 				break;
 
 			case 'r':
 			case 'f':
-				function_id = FUNCTION_SIXTY_ID;
+				function_id = FUNCTION_FOURTYFIVE_ID;
 				break;
 
 			case 't':
 			case 'g':
-				function_id = FUNCTION_SEVENTY_ID;
+				function_id = FUNCTION_FIFTY_ID;
 				break;
+            case 'y':
+            case 'h':
+                function_id = FUNCTION_FIFTYFIVE_ID;
+                break;
+            case 'u':
+            case 'j':
+                function_id = FUNCTION_SIXTY_ID;
+                break;
 
-			default:
-				continue;
 		}
 
 		/** Ustalenie akcji (wł/wył) na podstawie klawisza */
 		switch(key) {
-            case 'q': value = 30; break;
-            case 'w': value = 40; break;
-            case 'e': value = 50; break;
-            case 'r': value = 60; break;
-            case 't': value = 70; break;
-				
+            case 'q': printf("\n%s\n", str1 ); break;
+            case 'w': printf("\n%s\n", str2 ); break;
+            case 'e': printf("\n%s\n", str3 ); break;
+            case 'r': printf("\n%s\n", str4 ); break;
+            case 't': printf("\n%s\n", str5 ); break;
+            case 'y': printf("\n%s\n", str6 ); break;
+            case 'u': printf("\n%s\n", str7 ); break;
         
 
-			case 'a':
-			case 's':
-			case 'd':
-			case 'f':
-			case 'g':
-				value = 0;
-				break;
+			case 'a': printf("\n%s\n", str8 ); break;
+			case 's': printf("\n%s\n", str8 ); break;
+			case 'd': printf("\n%s\n", str8 ); break;
+			case 'f': printf("\n%s\n", str8 ); break;
+			case 'g': printf("\n%s\n", str8 ); break;
+            case 'h': printf("\n%s\n", str8 ); break;
+            case 'j': printf("\n%s\n", str8 ); break;
 
-			default:
-				continue;
 		}
-        if(key == 'q'){
-            
-        }
+
 
 		/** Zapisanie nowej wartości w pamięci */
 		address = bus_address + (function_id-1) * 4;

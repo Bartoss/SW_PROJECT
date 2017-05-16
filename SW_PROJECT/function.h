@@ -43,20 +43,25 @@ functions.h :
 #define FUNCTION_H_
 #include <stdint.h>
 #define FUNCTION_THIRTY_ID 1
-#define FUNCTION_FOURTY_ID 2
-#define FUNCTION_FIFTY_ID 3
-#define FUNCTION_SIXTY_ID 4
-#define FUNCTION_SEVENTY_ID 5
+#define FUNCTION_THIRTYFIVE_ID 2
+#define FUNCTION_FOURTY_ID 3
+#define FUNCTION_FOURTYFIVE_ID 4
+#define FUNCTION_FIFTY_ID 5
+#define FUNCTION_FIFTYFIVE_ID 6
+#define FUNCTION_SIXTY_ID 7
 
 /**
  * Dostępne funkcje
  */
 enum class Function : uint8_t {
 	THIRTY = 1, //
-	FOURTY = 2, //
-	FIFTY = 4, //
-	SIXTY= 8, //
-	SEVENTY = 16 // 
+    THIRTYFIVE = 2, //
+	FOURTY = 4, //
+	FOURTYFIVE = 8, //
+	FIFTY= 16, //
+	FIFTYFIVE = 32, //
+    SIXTY = 64,
+    
 };
 
 #endif /* FUNCTION_H_ */
