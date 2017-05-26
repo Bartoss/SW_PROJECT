@@ -41,9 +41,9 @@
  *****************************************************************************/
 
 #include "systemc.h"
-#include "sub_processor.h"
+#include "processorTwo.h"
 
-void sub_processor::main()
+void processorTwo::main()
 {
 	const int length = 7;
 	simple_bus_status status;
@@ -53,7 +53,7 @@ void sub_processor::main()
 	{
 		wait();
 		status = bus_port->burst_read(bus_unique_priority, data, bus_address, length, bus_lock);
-		if(data[0]==1) {
+		if(data[0]==0) {
 			data[1] =0;
 			data[2] = 0;
 			data[3] = 0;

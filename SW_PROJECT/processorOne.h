@@ -47,14 +47,14 @@
 /*
  * Procesor główny odczytujący dane z klawiatury
  */
-class main_processor : public processor
+class processorOne : public processor
 {
 public:
 
-	SC_HAS_PROCESS(main_processor);
+	SC_HAS_PROCESS(processorOne);
 
-	main_processor(sc_module_name name, unsigned int bus_unique_priority, unsigned int bus_address, bool bus_lock, int bus_timeout)
-		: processor(name, bus_unique_priority, bus_address, bus_lock, bus_timeout) 
+	processorOne(sc_module_name name, unsigned int bus_unique_priority, unsigned int bus_address, bool bus_lock, int bus_timeout)
+    : processor(name, bus_unique_priority, bus_address, bus_lock, bus_timeout)
 	{
 
 	}

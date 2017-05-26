@@ -73,7 +73,9 @@ void Display::refresh()
 		} else {
 			attron(COLOR_PAIR(COLOR_PAIR::DISABLED));
 		}
-		mvwprintw(stdscr, line++, 0, "%s", function.second.c_str());
+		mvwprintw(stdscr, line, line, "%s", function.second.c_str());
+        //printw(stdscr, line++, 0, "%s", function.second.c_str());
+        
 	}
 }
 

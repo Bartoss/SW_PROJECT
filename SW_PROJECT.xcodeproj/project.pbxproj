@@ -16,9 +16,9 @@
 		A9BBB6E81EC4610600CCBB83 /* simple_bus_tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DC1EC4610600CCBB83 /* simple_bus_tools.cpp */; };
 		A9BBB6E91EC4610600CCBB83 /* simple_bus_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DD1EC4610600CCBB83 /* simple_bus_types.cpp */; };
 		A9BBB6EA1EC4610600CCBB83 /* simple_bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */; };
-		A9BBB6EB1EC4610600CCBB83 /* sub_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E11EC4610600CCBB83 /* sub_processor.cpp */; };
+		A9BBB6EB1EC4610600CCBB83 /* processorTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */; };
 		A9BBB6EC1EC4610600CCBB83 /* top.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E31EC4610600CCBB83 /* top.cpp */; };
-		A9BBB6EF1EC4615B00CCBB83 /* main_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6ED1EC4615B00CCBB83 /* main_processor.cpp */; };
+		A9BBB6EF1EC4615B00CCBB83 /* processorOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */; };
 		A9BBB6F31EC4617400CCBB83 /* display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6F01EC4617400CCBB83 /* display.cpp */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +57,12 @@
 		A9BBB6DE1EC4610600CCBB83 /* simple_bus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_types.h; sourceTree = "<group>"; };
 		A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple_bus.cpp; sourceTree = "<group>"; };
 		A9BBB6E01EC4610600CCBB83 /* simple_bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus.h; sourceTree = "<group>"; };
-		A9BBB6E11EC4610600CCBB83 /* sub_processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sub_processor.cpp; sourceTree = "<group>"; };
-		A9BBB6E21EC4610600CCBB83 /* sub_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sub_processor.h; sourceTree = "<group>"; };
+		A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processorTwo.cpp; sourceTree = "<group>"; };
+		A9BBB6E21EC4610600CCBB83 /* processorTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processorTwo.h; sourceTree = "<group>"; };
 		A9BBB6E31EC4610600CCBB83 /* top.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = top.cpp; sourceTree = "<group>"; };
 		A9BBB6E41EC4610600CCBB83 /* top.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = top.h; sourceTree = "<group>"; };
-		A9BBB6ED1EC4615B00CCBB83 /* main_processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main_processor.cpp; sourceTree = "<group>"; };
-		A9BBB6EE1EC4615B00CCBB83 /* main_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main_processor.h; sourceTree = "<group>"; };
+		A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processorOne.cpp; sourceTree = "<group>"; };
+		A9BBB6EE1EC4615B00CCBB83 /* processorOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processorOne.h; sourceTree = "<group>"; };
 		A9BBB6F01EC4617400CCBB83 /* display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = display.cpp; sourceTree = "<group>"; };
 		A9BBB6F11EC4617400CCBB83 /* display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
 		A9BBB6F21EC4617400CCBB83 /* function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = function.h; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 				A9BBB6F01EC4617400CCBB83 /* display.cpp */,
 				A9BBB6F11EC4617400CCBB83 /* display.h */,
 				A9BBB6F21EC4617400CCBB83 /* function.h */,
-				A9BBB6ED1EC4615B00CCBB83 /* main_processor.cpp */,
-				A9BBB6EE1EC4615B00CCBB83 /* main_processor.h */,
+				A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */,
+				A9BBB6EE1EC4615B00CCBB83 /* processorOne.h */,
 				A9BBB6D01EC4610600CCBB83 /* processor.cpp */,
 				A9BBB6D11EC4610600CCBB83 /* processor.h */,
 				A9BBB6D21EC4610600CCBB83 /* sc_main.cpp */,
@@ -122,8 +122,8 @@
 				A9BBB6DE1EC4610600CCBB83 /* simple_bus_types.h */,
 				A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */,
 				A9BBB6E01EC4610600CCBB83 /* simple_bus.h */,
-				A9BBB6E11EC4610600CCBB83 /* sub_processor.cpp */,
-				A9BBB6E21EC4610600CCBB83 /* sub_processor.h */,
+				A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */,
+				A9BBB6E21EC4610600CCBB83 /* processorTwo.h */,
 				A9BBB6E31EC4610600CCBB83 /* top.cpp */,
 				A9BBB6E41EC4610600CCBB83 /* top.h */,
 				A90205461EA6BE3E0001CDCD /* main.cpp */,
@@ -203,14 +203,14 @@
 				A9BBB6E81EC4610600CCBB83 /* simple_bus_tools.cpp in Sources */,
 				A9BBB6F31EC4617400CCBB83 /* display.cpp in Sources */,
 				A9BBB6EA1EC4610600CCBB83 /* simple_bus.cpp in Sources */,
-				A9BBB6EB1EC4610600CCBB83 /* sub_processor.cpp in Sources */,
+				A9BBB6EB1EC4610600CCBB83 /* processorTwo.cpp in Sources */,
 				A938F5941EA7CB910061C73A /* moduleOne.cpp in Sources */,
 				A9BBB6E51EC4610600CCBB83 /* processor.cpp in Sources */,
 				A9BBB6E71EC4610600CCBB83 /* simple_bus_arbiter.cpp in Sources */,
 				A9BBB6EC1EC4610600CCBB83 /* top.cpp in Sources */,
 				A9BBB6E61EC4610600CCBB83 /* sc_main.cpp in Sources */,
 				A90205471EA6BE3E0001CDCD /* main.cpp in Sources */,
-				A9BBB6EF1EC4615B00CCBB83 /* main_processor.cpp in Sources */,
+				A9BBB6EF1EC4615B00CCBB83 /* processorOne.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

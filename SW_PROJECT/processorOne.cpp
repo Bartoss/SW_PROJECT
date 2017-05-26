@@ -40,13 +40,13 @@
  
  *****************************************************************************/
 #include "systemc.h"
-#include "main_processor.h"
+#include "processorOne.h"
 #include "ncurses.h"
 #include "function.h"
 #include "display.h"
 #define KEY_ESC 27
 
-void main_processor::main()
+void processorOne::main()
 {
 	char key;
 	int function_id, address, value;

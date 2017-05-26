@@ -45,13 +45,13 @@
 #include "systemc.h"
 #include "processor.h"
 
-class sub_processor : public processor
+class processorTwo : public processor
 {
 public:
 
-	SC_HAS_PROCESS(sub_processor);
+	SC_HAS_PROCESS(processorTwo);
 
-	sub_processor(sc_module_name name, unsigned int bus_unique_priority, unsigned int bus_address, bool bus_lock, int bus_timeout)
+	processorTwo(sc_module_name name, unsigned int bus_unique_priority, unsigned int bus_address, bool bus_lock, int bus_timeout)
 		: processor(name, bus_unique_priority, bus_address, bus_lock, bus_timeout) 
 	{
 
