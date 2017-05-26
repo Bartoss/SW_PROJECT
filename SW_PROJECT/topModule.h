@@ -8,7 +8,7 @@
 #include "processorOne.h"
 #include "processorTwo.h"
 
-class top : public sc_module
+class topModule : public sc_module
 {
 private:
 	sc_clock clock;
@@ -19,7 +19,7 @@ private:
   	processorTwo *vProcessorTwo;
 
 public:
-	top(sc_module_name name);
+	topModule(sc_module_name name);
 };
 
 #endif

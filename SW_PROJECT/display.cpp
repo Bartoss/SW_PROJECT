@@ -66,17 +66,7 @@ void Display::disable(Function function)
 
 void Display::refresh()
 {
-	short line = 0;
-	for(const auto& function : functions_names) {
-		if(check(function.first)) {
-			attron(COLOR_PAIR(COLOR_PAIR::ENABLED));
-		} else {
-			attron(COLOR_PAIR(COLOR_PAIR::DISABLED));
-		}
-		mvwprintw(stdscr, line, line, "%s", function.second.c_str());
-        //printw(stdscr, line++, 0, "%s", function.second.c_str());
-        
-	}
+		mvwprintw(stdscr, 0, 0, "%s");
 }
 
 void Display::set_functions_names()

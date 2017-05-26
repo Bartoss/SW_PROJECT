@@ -1,11 +1,11 @@
 #include <iostream>
 #include <systemc>
-#include "top.h"
+#include "topModule.h"
 #include "ncurses.h"
 
 int sc_main (int argc, char* argv[]) {
 	initscr();
-	top top("top");
+	topModule topModule("topModule");
 
 	sc_start();
 	endwin();

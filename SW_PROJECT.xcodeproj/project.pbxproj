@@ -17,7 +17,7 @@
 		A9BBB6E91EC4610600CCBB83 /* simple_bus_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DD1EC4610600CCBB83 /* simple_bus_types.cpp */; };
 		A9BBB6EA1EC4610600CCBB83 /* simple_bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */; };
 		A9BBB6EB1EC4610600CCBB83 /* processorTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */; };
-		A9BBB6EC1EC4610600CCBB83 /* top.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E31EC4610600CCBB83 /* top.cpp */; };
+		A9BBB6EC1EC4610600CCBB83 /* topModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E31EC4610600CCBB83 /* topModule.cpp */; };
 		A9BBB6EF1EC4615B00CCBB83 /* processorOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */; };
 		A9BBB6F31EC4617400CCBB83 /* display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6F01EC4617400CCBB83 /* display.cpp */; };
 /* End PBXBuildFile section */
@@ -59,8 +59,8 @@
 		A9BBB6E01EC4610600CCBB83 /* simple_bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus.h; sourceTree = "<group>"; };
 		A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processorTwo.cpp; sourceTree = "<group>"; };
 		A9BBB6E21EC4610600CCBB83 /* processorTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processorTwo.h; sourceTree = "<group>"; };
-		A9BBB6E31EC4610600CCBB83 /* top.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = top.cpp; sourceTree = "<group>"; };
-		A9BBB6E41EC4610600CCBB83 /* top.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = top.h; sourceTree = "<group>"; };
+		A9BBB6E31EC4610600CCBB83 /* topModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = topModule.cpp; sourceTree = "<group>"; };
+		A9BBB6E41EC4610600CCBB83 /* topModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topModule.h; sourceTree = "<group>"; };
 		A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processorOne.cpp; sourceTree = "<group>"; };
 		A9BBB6EE1EC4615B00CCBB83 /* processorOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processorOne.h; sourceTree = "<group>"; };
 		A9BBB6F01EC4617400CCBB83 /* display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = display.cpp; sourceTree = "<group>"; };
@@ -124,8 +124,8 @@
 				A9BBB6E01EC4610600CCBB83 /* simple_bus.h */,
 				A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */,
 				A9BBB6E21EC4610600CCBB83 /* processorTwo.h */,
-				A9BBB6E31EC4610600CCBB83 /* top.cpp */,
-				A9BBB6E41EC4610600CCBB83 /* top.h */,
+				A9BBB6E31EC4610600CCBB83 /* topModule.cpp */,
+				A9BBB6E41EC4610600CCBB83 /* topModule.h */,
 				A90205461EA6BE3E0001CDCD /* main.cpp */,
 				A938F5921EA7CB910061C73A /* moduleOne.cpp */,
 				A938F5931EA7CB910061C73A /* moduleOne.hpp */,
@@ -207,7 +207,7 @@
 				A938F5941EA7CB910061C73A /* moduleOne.cpp in Sources */,
 				A9BBB6E51EC4610600CCBB83 /* processor.cpp in Sources */,
 				A9BBB6E71EC4610600CCBB83 /* simple_bus_arbiter.cpp in Sources */,
-				A9BBB6EC1EC4610600CCBB83 /* top.cpp in Sources */,
+				A9BBB6EC1EC4610600CCBB83 /* topModule.cpp in Sources */,
 				A9BBB6E61EC4610600CCBB83 /* sc_main.cpp in Sources */,
 				A90205471EA6BE3E0001CDCD /* main.cpp in Sources */,
 				A9BBB6EF1EC4615B00CCBB83 /* processorOne.cpp in Sources */,

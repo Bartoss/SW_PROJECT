@@ -53,15 +53,5 @@ void processorTwo::main()
 	{
 		wait();
 		status = bus_port->burst_read(bus_unique_priority, data, bus_address, length, bus_lock);
-		if(data[0]==0) {
-			data[1] =0;
-			data[2] = 0;
-			data[3] = 0;
-			data[4] = 0;
-            data[5] = 0;
-            data[6] = 0;
-		}
-		wait();wait();wait();wait();wait();wait();wait();wait();wait();
-		cout << data[0] << "-" << data[1] << "-" << data[2] << "-" << data[3] << "-" << data[4] << "-" << data[5] << "-" << data[6]  << endl;
 	}
 }

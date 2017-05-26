@@ -1,6 +1,6 @@
-#include "top.h"
+#include "topModule.h"
 
-top::top(sc_module_name name) : sc_module(name), clock("clock")
+topModule::topModule(sc_module_name name) : sc_module(name), clock("clock")
 {
 	memory = new simple_bus_fast_mem("memory", 0x00, 0xff);
 	arbiter = new simple_bus_arbiter("arbiter");
