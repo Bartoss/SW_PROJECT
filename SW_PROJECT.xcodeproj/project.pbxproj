@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A90205471EA6BE3E0001CDCD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A90205461EA6BE3E0001CDCD /* main.cpp */; };
+		A938F5941EA7CB910061C73A /* moduleOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A938F5921EA7CB910061C73A /* moduleOne.cpp */; };
+		A96B01061EC4892700D23B0F /* libsystemc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A938F5901EA7CA800061C73A /* libsystemc.dylib */; };
+		A9BBB6E51EC4610600CCBB83 /* processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6D01EC4610600CCBB83 /* processor.cpp */; };
+		A9BBB6E61EC4610600CCBB83 /* sc_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6D21EC4610600CCBB83 /* sc_main.cpp */; };
+		A9BBB6E71EC4610600CCBB83 /* simple_bus_arbiter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6D41EC4610600CCBB83 /* simple_bus_arbiter.cpp */; };
+		A9BBB6E81EC4610600CCBB83 /* simple_bus_tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DC1EC4610600CCBB83 /* simple_bus_tools.cpp */; };
+		A9BBB6E91EC4610600CCBB83 /* simple_bus_types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DD1EC4610600CCBB83 /* simple_bus_types.cpp */; };
+		A9BBB6EA1EC4610600CCBB83 /* simple_bus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */; };
+		A9BBB6EB1EC4610600CCBB83 /* processorTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */; };
+		A9BBB6EC1EC4610600CCBB83 /* topModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6E31EC4610600CCBB83 /* topModule.cpp */; };
+		A9BBB6EF1EC4615B00CCBB83 /* processorOne.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */; };
+		A9BBB6F31EC4617400CCBB83 /* display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9BBB6F01EC4617400CCBB83 /* display.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +37,35 @@
 /* Begin PBXFileReference section */
 		A90205431EA6BE3E0001CDCD /* SW_PROJECT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SW_PROJECT; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90205461EA6BE3E0001CDCD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A938F5901EA7CA800061C73A /* libsystemc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsystemc.dylib; path = "../../../../usr/local/systemc231a/lib-macosx64/libsystemc.dylib"; sourceTree = "<group>"; };
+		A938F5921EA7CB910061C73A /* moduleOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = moduleOne.cpp; sourceTree = "<group>"; };
+		A938F5931EA7CB910061C73A /* moduleOne.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = moduleOne.hpp; sourceTree = "<group>"; };
+		A9BBB6D01EC4610600CCBB83 /* processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processor.cpp; sourceTree = "<group>"; };
+		A9BBB6D11EC4610600CCBB83 /* processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processor.h; sourceTree = "<group>"; };
+		A9BBB6D21EC4610600CCBB83 /* sc_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sc_main.cpp; sourceTree = "<group>"; };
+		A9BBB6D31EC4610600CCBB83 /* simple_bus_arbiter_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_arbiter_if.h; sourceTree = "<group>"; };
+		A9BBB6D41EC4610600CCBB83 /* simple_bus_arbiter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple_bus_arbiter.cpp; sourceTree = "<group>"; };
+		A9BBB6D51EC4610600CCBB83 /* simple_bus_arbiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_arbiter.h; sourceTree = "<group>"; };
+		A9BBB6D61EC4610600CCBB83 /* simple_bus_blocking_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_blocking_if.h; sourceTree = "<group>"; };
+		A9BBB6D71EC4610600CCBB83 /* simple_bus_direct_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_direct_if.h; sourceTree = "<group>"; };
+		A9BBB6D81EC4610600CCBB83 /* simple_bus_fast_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_fast_mem.h; sourceTree = "<group>"; };
+		A9BBB6D91EC4610600CCBB83 /* simple_bus_non_blocking_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_non_blocking_if.h; sourceTree = "<group>"; };
+		A9BBB6DA1EC4610600CCBB83 /* simple_bus_request.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_request.h; sourceTree = "<group>"; };
+		A9BBB6DB1EC4610600CCBB83 /* simple_bus_slave_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_slave_if.h; sourceTree = "<group>"; };
+		A9BBB6DC1EC4610600CCBB83 /* simple_bus_tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple_bus_tools.cpp; sourceTree = "<group>"; };
+		A9BBB6DD1EC4610600CCBB83 /* simple_bus_types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple_bus_types.cpp; sourceTree = "<group>"; };
+		A9BBB6DE1EC4610600CCBB83 /* simple_bus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus_types.h; sourceTree = "<group>"; };
+		A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = simple_bus.cpp; sourceTree = "<group>"; };
+		A9BBB6E01EC4610600CCBB83 /* simple_bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simple_bus.h; sourceTree = "<group>"; };
+		A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processorTwo.cpp; sourceTree = "<group>"; };
+		A9BBB6E21EC4610600CCBB83 /* processorTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processorTwo.h; sourceTree = "<group>"; };
+		A9BBB6E31EC4610600CCBB83 /* topModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = topModule.cpp; sourceTree = "<group>"; };
+		A9BBB6E41EC4610600CCBB83 /* topModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topModule.h; sourceTree = "<group>"; };
+		A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processorOne.cpp; sourceTree = "<group>"; };
+		A9BBB6EE1EC4615B00CCBB83 /* processorOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = processorOne.h; sourceTree = "<group>"; };
+		A9BBB6F01EC4617400CCBB83 /* display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = display.cpp; sourceTree = "<group>"; };
+		A9BBB6F11EC4617400CCBB83 /* display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		A9BBB6F21EC4617400CCBB83 /* function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = function.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96B01061EC4892700D23B0F /* libsystemc.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +85,7 @@
 			children = (
 				A90205451EA6BE3E0001CDCD /* SW_PROJECT */,
 				A90205441EA6BE3E0001CDCD /* Products */,
+				A938F58F1EA7CA800061C73A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +100,45 @@
 		A90205451EA6BE3E0001CDCD /* SW_PROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				A9BBB6F01EC4617400CCBB83 /* display.cpp */,
+				A9BBB6F11EC4617400CCBB83 /* display.h */,
+				A9BBB6F21EC4617400CCBB83 /* function.h */,
+				A9BBB6ED1EC4615B00CCBB83 /* processorOne.cpp */,
+				A9BBB6EE1EC4615B00CCBB83 /* processorOne.h */,
+				A9BBB6D01EC4610600CCBB83 /* processor.cpp */,
+				A9BBB6D11EC4610600CCBB83 /* processor.h */,
+				A9BBB6D21EC4610600CCBB83 /* sc_main.cpp */,
+				A9BBB6D31EC4610600CCBB83 /* simple_bus_arbiter_if.h */,
+				A9BBB6D41EC4610600CCBB83 /* simple_bus_arbiter.cpp */,
+				A9BBB6D51EC4610600CCBB83 /* simple_bus_arbiter.h */,
+				A9BBB6D61EC4610600CCBB83 /* simple_bus_blocking_if.h */,
+				A9BBB6D71EC4610600CCBB83 /* simple_bus_direct_if.h */,
+				A9BBB6D81EC4610600CCBB83 /* simple_bus_fast_mem.h */,
+				A9BBB6D91EC4610600CCBB83 /* simple_bus_non_blocking_if.h */,
+				A9BBB6DA1EC4610600CCBB83 /* simple_bus_request.h */,
+				A9BBB6DB1EC4610600CCBB83 /* simple_bus_slave_if.h */,
+				A9BBB6DC1EC4610600CCBB83 /* simple_bus_tools.cpp */,
+				A9BBB6DD1EC4610600CCBB83 /* simple_bus_types.cpp */,
+				A9BBB6DE1EC4610600CCBB83 /* simple_bus_types.h */,
+				A9BBB6DF1EC4610600CCBB83 /* simple_bus.cpp */,
+				A9BBB6E01EC4610600CCBB83 /* simple_bus.h */,
+				A9BBB6E11EC4610600CCBB83 /* processorTwo.cpp */,
+				A9BBB6E21EC4610600CCBB83 /* processorTwo.h */,
+				A9BBB6E31EC4610600CCBB83 /* topModule.cpp */,
+				A9BBB6E41EC4610600CCBB83 /* topModule.h */,
 				A90205461EA6BE3E0001CDCD /* main.cpp */,
+				A938F5921EA7CB910061C73A /* moduleOne.cpp */,
+				A938F5931EA7CB910061C73A /* moduleOne.hpp */,
 			);
 			path = SW_PROJECT;
+			sourceTree = "<group>";
+		};
+		A938F58F1EA7CA800061C73A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A938F5901EA7CA800061C73A /* libsystemc.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +199,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BBB6E91EC4610600CCBB83 /* simple_bus_types.cpp in Sources */,
+				A9BBB6E81EC4610600CCBB83 /* simple_bus_tools.cpp in Sources */,
+				A9BBB6F31EC4617400CCBB83 /* display.cpp in Sources */,
+				A9BBB6EA1EC4610600CCBB83 /* simple_bus.cpp in Sources */,
+				A9BBB6EB1EC4610600CCBB83 /* processorTwo.cpp in Sources */,
+				A938F5941EA7CB910061C73A /* moduleOne.cpp in Sources */,
+				A9BBB6E51EC4610600CCBB83 /* processor.cpp in Sources */,
+				A9BBB6E71EC4610600CCBB83 /* simple_bus_arbiter.cpp in Sources */,
+				A9BBB6EC1EC4610600CCBB83 /* topModule.cpp in Sources */,
+				A9BBB6E61EC4610600CCBB83 /* sc_main.cpp in Sources */,
 				A90205471EA6BE3E0001CDCD /* main.cpp in Sources */,
+				A9BBB6EF1EC4615B00CCBB83 /* processorOne.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +308,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3X76KZ62FY;
+				HEADER_SEARCH_PATHS = /usr/local/systemc231a/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/systemc231a/lib-macosx64",
+				);
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,6 +322,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 3X76KZ62FY;
+				HEADER_SEARCH_PATHS = /usr/local/systemc231a/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/local/systemc231a/lib-macosx64",
+				);
+				OTHER_LDFLAGS = "-lncurses";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -249,6 +351,7 @@
 				A902054C1EA6BE3E0001CDCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
